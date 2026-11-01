@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: packaging-legacy
+Version: 23.0.post0
+Summary: Core utilities for legacy Python packages
+Author-email: Dustin Ingram <di@python.org>
+Project-URL: Source, https://github.com/di/packaging_legacy
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: LICENSE.APACHE
+License-File: LICENSE.BSD
+Requires-Dist: packaging >=23.0
+
+# Legacy Packaging
+
+This library provides support for "legacy" Python Packaging functionality
+removed from https://github.com/pypa/packaging.
+
+
+## Supported APIs
+
+This library includes support for the following deprecated/removed APIs:
+
+### `LegacyVersion`
+Removed in https://github.com/pypa/packaging/pull/407, this includes a
+`packaging_legacy.version.parse` function that handles legacy versions.
+
+```diff
+- from packaging.version import parse, LegacyVersion
++ from packaging_legacy.version import parse, LegacyVersion
+```

@@ -1,0 +1,3 @@
+devpi_server
+pytest_devpi_server
+test_devpi_server

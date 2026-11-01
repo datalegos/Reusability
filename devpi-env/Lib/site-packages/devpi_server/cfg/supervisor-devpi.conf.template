@@ -1,0 +1,6 @@
+[program:devpi-server]
+command={devpibin} {server_args}
+priority = 999
+startsecs = 5
+redirect_stderr = True
+autostart = True
