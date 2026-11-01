@@ -1,0 +1,13 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "package_b"
+version = "0.1.0"
+description = "Dummy test package B for dlctl self-test"
+requires-python = ">=3.9"
+dependencies = []
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/package_b"]

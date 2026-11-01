@@ -1,0 +1,42 @@
+{
+  "dlctl_version": "0.1.0",
+  "bundle_name": "new-bundled-package",
+  "bundle_version": "0.1.0",
+  "generated_at": "2026-09-02T06:32:22.237147+00:00",
+  "select_specs": [
+    "package_a.module_a:function_a",
+    "package_b.module_b:function_x"
+  ],
+  "functions": [
+    {
+      "select_spec": "package_a.module_a:function_a",
+      "source_package": "package_a",
+      "source_module": "package_a.module_a",
+      "function_name": "function_a",
+      "source_file": "D:\\dlctl-package\\tests\\package_a\\src\\package_a\\module_a.py",
+      "local_defs_pulled_in": [
+        "helper_a",
+        "MULTIPLIER"
+      ],
+      "sibling_modules_copied": [
+        "package_a.utils"
+      ],
+      "external_deps": []
+    },
+    {
+      "select_spec": "package_b.module_b:function_x",
+      "source_package": "package_b",
+      "source_module": "package_b.module_b",
+      "function_name": "function_x",
+      "source_file": "D:\\dlctl-package\\tests\\package_b\\src\\package_b\\module_b.py",
+      "local_defs_pulled_in": [
+        "helper_x",
+        "BASE_VALUE"
+      ],
+      "sibling_modules_copied": [],
+      "external_deps": []
+    }
+  ],
+  "all_external_deps": [],
+  "warnings": []
+}
